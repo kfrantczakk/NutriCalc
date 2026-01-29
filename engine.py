@@ -8,13 +8,17 @@ def calc_bmr(weight, height, age, gender):
     else:
         return 10 * weight + 6.25 * height - 5 * age - 161
 
-def calc_macros(total_kcal, weight, goal):
+def calc_macros(bmr, pal, weight, goal, weekly_change):
+        tdee = bmr * pal
+
+        daily_adjust = (weekly_change * 7700) / 7
+
         if goal == '1':
-            kcal = total_kcal - 300
+            kcal = tdee - daily_adjust
         elif goal == '3':
-            kcal = total_kcal + 300
+            kcal = tdee + daily_adjust
         else:
-            kcal = total_kcal
+            kcal = tdee
 
         protein = weight * 2
         fat = (kcal * 0.25) / 9

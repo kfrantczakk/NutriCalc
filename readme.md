@@ -1,4 +1,4 @@
-#NutriCalc v1.0
+#NutriCalc v1.1
 -
 
 NutriCalc is dietary calculator built with Python.
@@ -7,9 +7,10 @@ It provides calculations for Body Mass Index (BMI), Total Daily Energy Expenditu
 
 #KeyFeatures
 -
-- **Multilingual Support**: Fully localized for **English** and **Polish**.
-- **Standardized PAL**: Uses a fixed Physical Activity Level (PAL) of **1.4** (most common baseline) for consistent TDEE results
+- **Multilingual Support**: Fully localized for **English**, **Polish** and **Deutsch**.
+- **Dynamic PAL**: User can choose from 4 activity levels (1.2-1.8) with descriptive guidance.
 - **Goal Selection**: Supports **Cutting**, **Maintenance** and **Bulking**
+- **Specific Weight Goals**: Ability to set a target weight change (0.5kg to 1.0kg per week) for automated calorie adjustment.
 - **Macro Distribution**
 
 #ProjectArchitecture
@@ -22,10 +23,9 @@ The code is divided into three main modules for better maintainability:
 
 #FutureRoadmap:
 -
--[ ] **Dynamic Activity Levels**: User-selectable PAL factors (1.3 - 2.2).
--[ ] **Specific Weight Goals**: Option to set target weight gain/loss per week
--[ ] **Expanded Localization**: Support for German, Spanish and French.
+-[ ] **Expanded Localization**: Support for more languages.
 -[ ] **Data Export**: Save results to a `.txt` or `.pdf` file.
+-[ ] **Web App**
 
 #QuickStart
 - 
